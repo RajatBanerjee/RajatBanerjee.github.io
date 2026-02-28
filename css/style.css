@@ -149,8 +149,26 @@ img, svg {
   position: relative;
 }
 
+.hero-flex {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
 .hero-content {
-  padding-top: 60px;
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-photo {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 65%;
+  border: 3px solid var(--border);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
 }
 
 .hero-greeting {
@@ -553,8 +571,15 @@ footer {
     padding-top: calc(var(--nav-height) + 20px);
   }
 
-  .hero-content {
-    padding-top: 32px;
+  .hero-flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .hero-photo {
+    width: 200px;
+    height: 200px;
   }
 
   .about-grid {
@@ -573,6 +598,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .hero-photo {
+    width: 160px;
+    height: 160px;
+  }
+
   .hero-cta {
     flex-direction: column;
   }

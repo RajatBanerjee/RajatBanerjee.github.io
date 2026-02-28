@@ -19,10 +19,10 @@ handleNavScroll();
    ============================================ */
 const typedEl = document.getElementById('typed-text');
 const phrases = [
-  'Software Engineer',
-  'Backend Developer',
-  'Systems Thinker',
-  'Problem Solver',
+  'Sr Engineering Manager',
+  'CRM & CMS Leader',
+  'Engineering Team Builder',
+  'Technology Leader',
 ];
 
 let phraseIndex = 0;
