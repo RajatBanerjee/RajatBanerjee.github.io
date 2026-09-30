@@ -20,9 +20,9 @@ handleNavScroll();
 const typedEl = document.getElementById('typed-text');
 const phrases = [
   'Sr Engineering Manager',
-  'CRM & CMS Leader',
+  'CRM & Content Supply Chain',
+  'Salesforce → Adobe Migration',
   'Engineering Team Builder',
-  'Technology Leader',
 ];
 
 let phraseIndex = 0;
