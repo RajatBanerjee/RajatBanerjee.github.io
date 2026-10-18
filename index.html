@@ -1,245 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rajat Banerjee &mdash; Portfolio</title>
-  <meta name="description" content="Rajat Banerjee — Sr. Manager, Software Engineering at Fanatics. Leading CRM and Content Supply Chain; migrated the company from Salesforce to Adobe (30M emails/hr, 400M+ profiles)." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rajat Banerjee — Engineering leader</title>
+<meta name="description" content="Rajat Banerjee leads CRM and Content Supply Chain engineering at Fanatics. Selected work in customer communications, content platforms, and engineering leadership.">
+<meta name="theme-color" content="#f7f6f2">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232c5148'/%3E%3Ctext x='32' y='42' text-anchor='middle' fill='%23fff' font-family='Georgia' font-size='30'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- ========== NAV ========== -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo">RB</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a
-        href="https://www.linkedin.com/in/rajat-banerjee/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="nav-linkedin"
-        aria-label="LinkedIn profile"
-      >
-        <!-- LinkedIn icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-        </svg>
-        LinkedIn
-      </a>
-    </div>
-  </nav>
-
-  <!-- ========== HERO ========== -->
-  <section id="hero">
-    <div class="hero-flex">
-      <div class="hero-content">
-        <p class="hero-greeting">Hi, I'm</p>
-        <h1 class="hero-name">Rajat Banerjee.</h1>
-        <h2 class="hero-title">
-          <span id="typed-text"></span><span class="cursor">|</span>
-        </h2>
-        <p class="hero-tagline">
-          Turning complex customer engagement challenges into systems that
-          actually work &mdash; and building the teams that make it happen.
-        </p>
-        <div class="hero-cta">
-          <a
-            href="https://www.linkedin.com/in/rajat-banerjee/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-primary"
-          >
-            <!-- LinkedIn icon inline -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-            </svg>
-            Connect on LinkedIn
-          </a>
-          <a
-            href="https://github.com/RajatBanerjee"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-ghost"
-            aria-label="GitHub profile"
-          >
-            <!-- GitHub icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-            </svg>
-            GitHub
-          </a>
-        </div>
-      </div>
-      <img src="img/headshot.jpg" alt="Rajat Banerjee" class="hero-photo" />
-    </div>
-    <div class="hero-scroll-hint" aria-hidden="true">
-      <span>scroll</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="12" y1="5" x2="12" y2="19"></line>
-        <polyline points="19 12 12 19 5 12"></polyline>
-      </svg>
-    </div>
-  </section>
-
-  <!-- ========== ABOUT ========== -->
-  <section id="about" class="section fade-in">
-    <div class="section-inner">
-      <h2 class="section-title"><span class="section-number">01.</span> About</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            I started out writing code &mdash; Node.js services, React frontends, the
-            full stack. Somewhere along the way I realized I got just as much energy
-            from unblocking other engineers as I did from shipping my own features.
-            That shift led me from senior IC work into engineering management.
-          </p>
-          <p>
-            Today I lead 15 engineers across two teams at Fanatics. The CRM team
-            owns every email, SMS, and push notification a fan receives &mdash; and
-            last year we moved the entire platform off Salesforce onto Adobe's
-            Experience Platform: 30 million emails an hour, 400 million customer
-            profiles, 99% of our volume migrated without dropping a beat. The
-            Content Supply Chain team builds the AI-driven pipeline behind our
-            product imagery &mdash; generation, audit, and metadata tagging, wired
-            into our DAM and creative tools.
-          </p>
-          <p>
-            Having spent a decade writing production code before managing people,
-            I lead with technical context. I can review a system design and a sprint
-            retro with equal fluency, and I think that matters.
-          </p>
-        </div>
-        <div class="about-skills">
-          <h3>Areas of expertise</h3>
-          <ul class="skills-list">
-            <li>CRM Systems</li>
-            <li>Adobe Experience Platform</li>
-            <li>Email Marketing Platforms</li>
-            <li>CMS &amp; Web Platforms</li>
-            <li>Team Leadership</li>
-            <li>System Architecture</li>
-            <li>Apache Kafka</li>
-            <li>AWS</li>
-            <li>Node.js / React</li>
-            <li>Stakeholder Management</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== EXPERIENCE ========== -->
-  <section id="experience" class="section fade-in">
-    <div class="section-inner">
-      <h2 class="section-title"><span class="section-number">02.</span> Experience</h2>
-      <div class="timeline">
-
-        <article class="timeline-item">
-          <div class="timeline-meta">
-            <span class="timeline-dates">2022 &mdash; Present</span>
-          </div>
-          <div class="timeline-content">
-            <h3 class="timeline-role">Sr Engineering Manager</h3>
-            <p class="timeline-company">
-              <a href="https://www.fanatics.com" target="_blank" rel="noopener noreferrer">Fanatics ↗</a>
-            </p>
-            <ul class="timeline-bullets">
-              <li>Lead 15 engineers across two teams: CRM (12) and Content Supply Chain (3).</li>
-              <li>Moved Fanatics' entire CRM off Salesforce onto Adobe Experience Platform &mdash; 99% of volume migrated, email throughput up 15x to 30M sends an hour, 400M+ customer profiles unified in real time.</li>
-              <li>Shipped the journeys fans actually feel: abandonment and onboarding flows across the org, real-time personalized content, a homegrown coupon engine, and all transactional email on Amazon SES.</li>
-              <li>Run content supply chain: an AI pipeline that generates, audits, and tags product imagery (RAG + vision models), plugged into OrangeLogic and Adobe Workfront.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span>CRM</span><span>Adobe AEP</span><span>AJO</span><span>Kafka</span><span>AWS</span><span>Amazon SES</span><span>Content Supply Chain</span><span>Team Leadership</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-meta">
-            <span class="timeline-dates">2015 &mdash; 2022</span>
-          </div>
-          <div class="timeline-content">
-            <h3 class="timeline-role">Sr Staff Software Engineer</h3>
-            <p class="timeline-company">
-              <a href="https://www.fanatics.com" target="_blank" rel="noopener noreferrer">Fanatics ↗</a>
-            </p>
-            <ul class="timeline-bullets">
-              <li>Grew from hands-on senior engineer to managing the team &mdash; a progression that happened because I kept solving problems beyond my own code.</li>
-              <li>Wrote much of the Node.js + React/Redux foundation for the web-client platform that still runs today.</li>
-              <li>Led the microservices migration that retired a monolith and unlocked independent team deployments.</li>
-              <li>Built the code-review and design-doc culture that scaled the team from 4 to 15+ engineers.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span>Node.js</span><span>React</span><span>Microservices</span><span>Mentorship</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-meta">
-            <span class="timeline-dates">2012 &mdash; 2015</span>
-          </div>
-          <div class="timeline-content">
-            <h3 class="timeline-role">Principal / Senior Software Engineer</h3>
-            <p class="timeline-company">
-              <a href="https://www.art.com" target="_blank" rel="noopener noreferrer">Art.com ↗</a>
-            </p>
-            <ul class="timeline-bullets">
-              <li>Owned the product-page experience end-to-end &mdash; a Node.js app on a microservices backend serving Art.com's highest-traffic page.</li>
-              <li>Shipped server-side rendering that materially lifted mobile conversion rates.</li>
-              <li>First real mentoring experience: helped junior devs level up and discovered I enjoyed it.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span>Node.js</span><span>JavaScript</span><span>SSR</span><span>Microservices</span>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== CONTACT / FOOTER ========== -->
-  <section id="contact" class="section fade-in">
-    <div class="section-inner contact-inner">
-      <span class="section-number">03.</span>
-      <h2 class="contact-heading">Get In Touch</h2>
-      <p class="contact-text">
-        I'm always open to interesting conversations, new opportunities, or just a good chat
-        about technology. My inbox is open.
-      </p>
-      <a
-        href="mailto:rajatmig29@gmail.com"
-        class="btn btn-primary"
-      >Say Hello</a>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer-links">
-      <a href="https://github.com/RajatBanerjee" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-        </svg>
-      </a>
-      <a href="https://www.linkedin.com/in/rajat-banerjee/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-        </svg>
-      </a>
-    </div>
-    <p class="footer-credit">Designed &amp; Built by Rajat Banerjee</p>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
-</html>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="page">
+<header class="masthead"><a class="wordmark" href="#">Rajat Banerjee<span class="wordmark-dot">.</span></a><nav aria-label="Main navigation"><a href="#work">Work</a><a href="#background">Background</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a></nav></header>
+<main id="main">
+<section class="intro" aria-labelledby="intro-title">
+<div class="intro-copy"><p class="eyebrow">Senior Engineering Manager · Fanatics</p><h1 id="intro-title">Engineering the systems<br> behind the <em>experience.</em></h1><p class="lede">I lead CRM and Content Supply Chain engineering, building the platforms behind customer communications, marketing content, and apparel imagery.</p><p class="intro-detail">My work spans system design, production operations, and the people building them. Previously, I led Fanatics’ CMS platform and internal tools.</p><div class="intro-links"><a class="text-link" href="#work">Explore selected work <span aria-hidden="true">↓</span></a><a href="https://www.linkedin.com/in/rajat-banerjee/">LinkedIn <span aria-hidden="true">↗</span></a></div></div>
+<aside class="portrait"><img src="linkedin-portrait.jpg" alt="Rajat Banerjee" width="360" height="360"><p>Rajat Banerjee<span>San Francisco Bay Area</span></p></aside>
+</section>
+<div class="scope-line"><span>Customer communications</span><span>Content platforms</span><span>Engineering leadership</span></div>
+<section id="work" class="section" aria-labelledby="work-title">
+<div class="section-heading"><div><p class="eyebrow">Selected work</p><h2 id="work-title">Platforms built to be used.</h2></div><p>From the content a customer sees<br>to the message that reaches them.</p></div>
+<div class="communications-intro"><p class="eyebrow">CRM &amp; customer communications</p><h3>From the first campaign to the shipping update.</h3><p>Built the CRM platform for both marketing and transactional communications, connecting customer data, content, and delivery. Two different kinds of communication, with teams and systems built around what each needs.</p></div>
+<div class="communications-grid">
+<article class="communication-case"><p class="eyebrow">01 / Marketing</p><h3>Relevant messages.<br>At customer scale.</h3><p>Led the CRM migration and engineering work behind campaigns, personalized journeys, and dynamic content. The platform brings customer data into the messages people receive, from onboarding to abandoned-cart reminders.</p><div class="message-flow" aria-label="Marketing flow: customer data and content, then campaigns and journeys, then personalized messages"><span>Customer data &amp; content</span><b aria-hidden="true">↓</b><span>Campaigns &amp; journeys</span><b aria-hidden="true">↓</b><span>Personalized messages</span></div><dl class="metrics"><div><dt>30M</dt><dd>email sends per hour</dd></div><div><dt>99%</dt><dd>of volume migrated</dd></div></dl><p class="source-note">Results from the CRM migration</p></article>
+<article class="communication-case"><p class="eyebrow">02 / Transactional</p><h3>Essential updates.<br>Through peak demand.</h3><p>Built the communications foundation for order confirmations, shipping updates, and account messages. Led the email platform from design through rollout, including traffic isolation, sending reputation, and production visibility.</p><div class="message-flow" aria-label="Transactional flow: order and account events, then message orchestration, then timely customer updates"><span>Order &amp; account events</span><b aria-hidden="true">↓</b><span>Message orchestration</span><b aria-hidden="true">↓</b><span>Timely customer updates</span></div><dl class="metrics"><div><dt>48×</dt><dd>sending volume growth</dd></div><div><dt>5 months</dt><dd>through the 2025 holiday season</dd></div></dl><p class="source-note">Documented in the AWS case study</p><a class="text-link" href="https://aws.amazon.com/blogs/messaging-and-targeting/how-fanatics-commerce-built-a-scalable-email-platform-on-amazon-ses/">Read the case study on AWS <span aria-hidden="true">↗</span></a></article>
+</div>
+<p class="diagram-note">Conceptual flows · Customer data, content, and delivery connect the work across both platforms.</p>
+<article class="content-work"><div><p class="eyebrow">Content supply chain</p><h3>The content behind<br>the customer experience.</h3></div><div><p>Lead engineering for content auditing and AI-assisted generation across marketing content and apparel images. The work connects how content is created, checked, and prepared with the teams and channels that use it.</p><p class="work-detail">Marketing content · Apparel imagery<br>Content auditing · AI-assisted generation</p></div></article>
+<article class="cms-work"><p class="eyebrow">The foundation</p><div><h3>Content management &amp; internal tools.</h3><p>Earlier at Fanatics, I led the design and development of the CMS platform and internal tools, helping teams manage storefront content and connecting authoring with the customer-facing experience.</p></div></article>
+</section>
+<section id="background" class="section background" aria-labelledby="background-title"><div class="background-intro"><p class="eyebrow">Background</p><h2 id="background-title">An engineer.<br>A team leader.</h2><p>Staying close to the technical work matters to me. Day to day, that means reviewing designs, coaching engineers, working through production issues, and making decisions with product, marketing, and creative teams.</p><p class="education">MS, Cloud Computing<br><span>San José State University · 2023</span></p></div>
+<div class="career"><article><p class="career-date">Sep 2022 — Present</p><h3>Senior Engineering Manager</h3><p>Fanatics</p><small>CRM &amp; Content Supply Chain</small></article><article><p class="career-date">Oct 2020 — Sep 2022</p><h3>Engineering Manager</h3><p>Fanatics</p><small>Unified Communication Platform</small></article><article><p class="career-date">Mar 2018 — Oct 2020</p><h3>Senior Staff Software Engineer</h3><p>Fanatics</p><small>CMS &amp; internal tooling</small></article><article><p class="career-date">Sep 2015 — Mar 2018</p><h3>Senior → Principal Software Engineer</h3><p>Art.com</p><small>Web experiences &amp; product-page architecture</small></article><details><summary>Earlier experience <span aria-hidden="true">+</span></summary><div class="earlier"><p><strong>Relevance Lab</strong><br>Senior Software Engineer · May 2013–Aug 2015</p><p><strong>Société Générale</strong><br>Software Engineer · Feb–May 2013</p><p><strong>Dell</strong><br>Software Engineer · Oct 2009–Jan 2013</p></div></details></div></section>
+<section id="contact" class="contact" aria-labelledby="contact-title"><div><p class="eyebrow">Get in touch</p><h2 id="contact-title">Let’s compare notes.</h2><p>Customer communications, content platforms,<br>or the work of leading engineering teams.</p></div><a class="contact-link" href="mailto:rajatmig29@gmail.com">rajatmig29@gmail.com <span aria-hidden="true">↗</span></a></section>
+</main>
+<footer><p>Rajat Banerjee</p><div><a href="https://www.linkedin.com/in/rajat-banerjee/">LinkedIn ↗</a><a href="https://github.com/RajatBanerjee">GitHub ↗</a></div></footer>
+</div>
+</body></html>
